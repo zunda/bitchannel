@@ -367,7 +367,7 @@ module BitChannel
 
     def normalize_text(text)
       @locale.to_local(text).lines.map {|line|
-        detab(line).rstrip + "\r\n"
+        line.rstrip + "\r\n"
       }.join('')
     end
 
