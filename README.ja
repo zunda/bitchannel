@@ -12,6 +12,8 @@ BitChannel README
   * Ruby 1.8.1 以上
   * CVS 1.10 以上
   * uconv.so (なくても構いません)
+  * Webrick gem
+  * Addressable gem
 
   作者は以下の環境で開発しています。
 
