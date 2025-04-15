@@ -11,6 +11,8 @@
 require 'bitchannel/erbutils'
 require 'bitchannel/textutils'
 
+require 'addressable/uri'
+
 module BitChannel
 
   # place holder for farm service methods.
@@ -53,7 +55,7 @@ module BitChannel
     end
 
     def escape_url(str)
-      escape_html(URI.escape(str))
+      escape_html(Addressable::URI.escape(str))
     end
   end
 
